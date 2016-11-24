@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5083BB291DCB334900A69B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BB281DCB334900A69B9D /* AppDelegate.swift */; };
+		5083BB2B1DCB334900A69B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BB2A1DCB334900A69B9D /* ViewController.swift */; };
+		5083BB2E1DCB334900A69B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5083BB2C1DCB334900A69B9D /* Main.storyboard */; };
+		5083BB301DCB334900A69B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5083BB2F1DCB334900A69B9D /* Assets.xcassets */; };
+		5083BB331DCB334900A69B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5083BB311DCB334900A69B9D /* LaunchScreen.storyboard */; };
+		5083BB3E1DCB334900A69B9D /* NativeBridgeReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BB3D1DCB334900A69B9D /* NativeBridgeReactTests.swift */; };
+		5083BB491DCB334900A69B9D /* NativeBridgeReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BB481DCB334900A69B9D /* NativeBridgeReactUITests.swift */; };
+		5083BB571DCB33D200A69B9D /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5083BB561DCB33D200A69B9D /* QRScannerViewController.swift */; };
+		5083BB5A1DCB351900A69B9D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5083BB591DCB351900A69B9D /* UserNotifications.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5083BB3A1DCB334900A69B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5083BB1D1DCB334900A69B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5083BB241DCB334900A69B9D;
+			remoteInfo = NativeBridgeReact;
+		};
+		5083BB451DCB334900A69B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5083BB1D1DCB334900A69B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5083BB241DCB334900A69B9D;
+			remoteInfo = NativeBridgeReact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5083BB251DCB334900A69B9D /* NativeBridgeReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeBridgeReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5083BB281DCB334900A69B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5083BB2A1DCB334900A69B9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5083BB2D1DCB334900A69B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5083BB2F1DCB334900A69B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5083BB321DCB334900A69B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5083BB341DCB334900A69B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5083BB391DCB334900A69B9D /* NativeBridgeReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NativeBridgeReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5083BB3D1DCB334900A69B9D /* NativeBridgeReactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBridgeReactTests.swift; sourceTree = "<group>"; };
+		5083BB3F1DCB334900A69B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5083BB441DCB334900A69B9D /* NativeBridgeReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NativeBridgeReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5083BB481DCB334900A69B9D /* NativeBridgeReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBridgeReactUITests.swift; sourceTree = "<group>"; };
+		5083BB4A1DCB334900A69B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5083BB561DCB33D200A69B9D /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		5083BB591DCB351900A69B9D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		5083BB5B1DCB352400A69B9D /* NativeBridgeReact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeBridgeReact.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5083BB221DCB334900A69B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083BB5A1DCB351900A69B9D /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB361DCB334900A69B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB411DCB334900A69B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5083BB1C1DCB334900A69B9D = {
+			isa = PBXGroup;
+			children = (
+				5083BB271DCB334900A69B9D /* NativeBridgeReact */,
+				5083BB3C1DCB334900A69B9D /* NativeBridgeReactTests */,
+				5083BB471DCB334900A69B9D /* NativeBridgeReactUITests */,
+				5083BB261DCB334900A69B9D /* Products */,
+				5083BB581DCB351800A69B9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5083BB261DCB334900A69B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5083BB251DCB334900A69B9D /* NativeBridgeReact.app */,
+				5083BB391DCB334900A69B9D /* NativeBridgeReactTests.xctest */,
+				5083BB441DCB334900A69B9D /* NativeBridgeReactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5083BB271DCB334900A69B9D /* NativeBridgeReact */ = {
+			isa = PBXGroup;
+			children = (
+				5083BB5B1DCB352400A69B9D /* NativeBridgeReact.entitlements */,
+				5083BB281DCB334900A69B9D /* AppDelegate.swift */,
+				5083BB2A1DCB334900A69B9D /* ViewController.swift */,
+				5083BB2C1DCB334900A69B9D /* Main.storyboard */,
+				5083BB2F1DCB334900A69B9D /* Assets.xcassets */,
+				5083BB311DCB334900A69B9D /* LaunchScreen.storyboard */,
+				5083BB341DCB334900A69B9D /* Info.plist */,
+				5083BB561DCB33D200A69B9D /* QRScannerViewController.swift */,
+			);
+			path = NativeBridgeReact;
+			sourceTree = "<group>";
+		};
+		5083BB3C1DCB334900A69B9D /* NativeBridgeReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				5083BB3D1DCB334900A69B9D /* NativeBridgeReactTests.swift */,
+				5083BB3F1DCB334900A69B9D /* Info.plist */,
+			);
+			path = NativeBridgeReactTests;
+			sourceTree = "<group>";
+		};
+		5083BB471DCB334900A69B9D /* NativeBridgeReactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5083BB481DCB334900A69B9D /* NativeBridgeReactUITests.swift */,
+				5083BB4A1DCB334900A69B9D /* Info.plist */,
+			);
+			path = NativeBridgeReactUITests;
+			sourceTree = "<group>";
+		};
+		5083BB581DCB351800A69B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5083BB591DCB351900A69B9D /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5083BB241DCB334900A69B9D /* NativeBridgeReact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5083BB4D1DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReact" */;
+			buildPhases = (
+				5083BB211DCB334900A69B9D /* Sources */,
+				5083BB221DCB334900A69B9D /* Frameworks */,
+				5083BB231DCB334900A69B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeBridgeReact;
+			productName = NativeBridgeReact;
+			productReference = 5083BB251DCB334900A69B9D /* NativeBridgeReact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5083BB381DCB334900A69B9D /* NativeBridgeReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5083BB501DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReactTests" */;
+			buildPhases = (
+				5083BB351DCB334900A69B9D /* Sources */,
+				5083BB361DCB334900A69B9D /* Frameworks */,
+				5083BB371DCB334900A69B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5083BB3B1DCB334900A69B9D /* PBXTargetDependency */,
+			);
+			name = NativeBridgeReactTests;
+			productName = NativeBridgeReactTests;
+			productReference = 5083BB391DCB334900A69B9D /* NativeBridgeReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5083BB431DCB334900A69B9D /* NativeBridgeReactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5083BB531DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReactUITests" */;
+			buildPhases = (
+				5083BB401DCB334900A69B9D /* Sources */,
+				5083BB411DCB334900A69B9D /* Frameworks */,
+				5083BB421DCB334900A69B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5083BB461DCB334900A69B9D /* PBXTargetDependency */,
+			);
+			name = NativeBridgeReactUITests;
+			productName = NativeBridgeReactUITests;
+			productReference = 5083BB441DCB334900A69B9D /* NativeBridgeReactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5083BB1D1DCB334900A69B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Max Wesel";
+				TargetAttributes = {
+					5083BB241DCB334900A69B9D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TGB47VCFY8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					5083BB381DCB334900A69B9D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TGB47VCFY8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5083BB241DCB334900A69B9D;
+					};
+					5083BB431DCB334900A69B9D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TGB47VCFY8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5083BB241DCB334900A69B9D;
+					};
+				};
+			};
+			buildConfigurationList = 5083BB201DCB334900A69B9D /* Build configuration list for PBXProject "NativeBridgeReact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5083BB1C1DCB334900A69B9D;
+			productRefGroup = 5083BB261DCB334900A69B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5083BB241DCB334900A69B9D /* NativeBridgeReact */,
+				5083BB381DCB334900A69B9D /* NativeBridgeReactTests */,
+				5083BB431DCB334900A69B9D /* NativeBridgeReactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5083BB231DCB334900A69B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083BB331DCB334900A69B9D /* LaunchScreen.storyboard in Resources */,
+				5083BB301DCB334900A69B9D /* Assets.xcassets in Resources */,
+				5083BB2E1DCB334900A69B9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB371DCB334900A69B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB421DCB334900A69B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5083BB211DCB334900A69B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083BB2B1DCB334900A69B9D /* ViewController.swift in Sources */,
+				5083BB291DCB334900A69B9D /* AppDelegate.swift in Sources */,
+				5083BB571DCB33D200A69B9D /* QRScannerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB351DCB334900A69B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083BB3E1DCB334900A69B9D /* NativeBridgeReactTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5083BB401DCB334900A69B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5083BB491DCB334900A69B9D /* NativeBridgeReactUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5083BB3B1DCB334900A69B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5083BB241DCB334900A69B9D /* NativeBridgeReact */;
+			targetProxy = 5083BB3A1DCB334900A69B9D /* PBXContainerItemProxy */;
+		};
+		5083BB461DCB334900A69B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5083BB241DCB334900A69B9D /* NativeBridgeReact */;
+			targetProxy = 5083BB451DCB334900A69B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5083BB2C1DCB334900A69B9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5083BB2D1DCB334900A69B9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5083BB311DCB334900A69B9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5083BB321DCB334900A69B9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5083BB4B1DCB334900A69B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5083BB4C1DCB334900A69B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5083BB4E1DCB334900A69B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NativeBridgeReact/NativeBridgeReact.entitlements;
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5083BB4F1DCB334900A69B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NativeBridgeReact/NativeBridgeReact.entitlements;
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReact/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5083BB511DCB334900A69B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NativeBridgeReact.app/NativeBridgeReact";
+			};
+			name = Debug;
+		};
+		5083BB521DCB334900A69B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NativeBridgeReact.app/NativeBridgeReact";
+			};
+			name = Release;
+		};
+		5083BB541DCB334900A69B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NativeBridgeReact;
+			};
+			name = Debug;
+		};
+		5083BB551DCB334900A69B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TGB47VCFY8;
+				INFOPLIST_FILE = NativeBridgeReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wesel.NativeBridgeReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NativeBridgeReact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5083BB201DCB334900A69B9D /* Build configuration list for PBXProject "NativeBridgeReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5083BB4B1DCB334900A69B9D /* Debug */,
+				5083BB4C1DCB334900A69B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5083BB4D1DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5083BB4E1DCB334900A69B9D /* Debug */,
+				5083BB4F1DCB334900A69B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5083BB501DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5083BB511DCB334900A69B9D /* Debug */,
+				5083BB521DCB334900A69B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5083BB531DCB334900A69B9D /* Build configuration list for PBXNativeTarget "NativeBridgeReactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5083BB541DCB334900A69B9D /* Debug */,
+				5083BB551DCB334900A69B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5083BB1D1DCB334900A69B9D /* Project object */;
+}

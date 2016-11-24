@@ -1,0 +1,26 @@
+{
+  "name": "nativeBridgeReact",
+  "version": "0.0.1",
+  "description": "native bridge for react",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "apn": "^2.1.1",
+    "express": "^4.13.3",
+    "google-closure-compiler-js": "^20161024.0.0",
+    "node-gcm": "^0.14.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2",
+    "webpack": "^1.13.1"
+  }
+}

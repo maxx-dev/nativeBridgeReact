@@ -1,0 +1,30 @@
+
+
+html, body {
+
+    width:100%;
+}
+
+
+.btn {
+
+    position:relative;
+    float:left;
+    width:calc(100% - 20px);
+    margin-top:20px;
+    color:#FFF;
+    text-align:center;
+    padding:5px;
+    box-sizing:border-box;
+    background-color:#001e23;
+}
+
+.result {
+
+    position:relative;
+    float:left;
+    font-size:20px;
+    padding: 5px;
+    word-wrap: break-word;
+    width:calc(100% - 20px);
+}

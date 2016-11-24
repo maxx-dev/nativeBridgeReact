@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NativeBridgeReact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="ac9-ek-oWN" kind="show" identifier="QRScanner" id="UXo-b5-dJp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="Y6f-0y-qRp">
+            <objects>
+                <viewController id="ac9-ek-oWN" customClass="QRScannerViewController" customModule="NativeBridgeReact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R67-Qq-SwI"/>
+                        <viewControllerLayoutGuide type="bottom" id="pbg-oF-etT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u1A-dy-qAt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wam-Y2-NHi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="639"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxt-ca-zOy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="639"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mxt-ca-zOy" firstAttribute="leading" secondItem="Wam-Y2-NHi" secondAttribute="leading" id="BfX-hf-OgJ"/>
+                                    <constraint firstItem="mxt-ca-zOy" firstAttribute="top" secondItem="Wam-Y2-NHi" secondAttribute="top" id="L4r-17-8dM"/>
+                                    <constraint firstAttribute="trailing" secondItem="mxt-ca-zOy" secondAttribute="trailing" id="On1-WA-4jm"/>
+                                    <constraint firstAttribute="bottom" secondItem="mxt-ca-zOy" secondAttribute="bottom" id="x1e-b6-EA2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6N-MD-Osv">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Abbrechen">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="abortQRCodeScan:" destination="ac9-ek-oWN" eventType="touchUpInside" id="TZa-EU-DDL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wam-Y2-NHi" secondAttribute="trailing" id="Lqj-ON-fCv"/>
+                            <constraint firstItem="Wam-Y2-NHi" firstAttribute="leading" secondItem="O6N-MD-Osv" secondAttribute="leading" id="PDk-kl-TzS"/>
+                            <constraint firstItem="Wam-Y2-NHi" firstAttribute="trailing" secondItem="O6N-MD-Osv" secondAttribute="trailing" id="QXl-In-hBt"/>
+                            <constraint firstItem="O6N-MD-Osv" firstAttribute="bottom" secondItem="pbg-oF-etT" secondAttribute="top" id="Z1t-o7-jX0"/>
+                            <constraint firstItem="pbg-oF-etT" firstAttribute="top" secondItem="Wam-Y2-NHi" secondAttribute="bottom" constant="28" id="a2b-dp-Cdi"/>
+                            <constraint firstItem="Wam-Y2-NHi" firstAttribute="leading" secondItem="u1A-dy-qAt" secondAttribute="leading" id="kDw-eK-PEf"/>
+                            <constraint firstItem="Wam-Y2-NHi" firstAttribute="top" secondItem="u1A-dy-qAt" secondAttribute="top" id="pAL-FQ-cn0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abortQRCodeScanBtn" destination="O6N-MD-Osv" id="1oR-og-34O"/>
+                        <outlet property="videoPreviewView" destination="mxt-ca-zOy" id="j3b-8A-CWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vc2-gb-Djw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="315.29235382308849"/>
+        </scene>
+    </scenes>
+</document>
